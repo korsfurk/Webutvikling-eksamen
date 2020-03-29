@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using EksamenApi.Models;
 //hello 
 namespace EksamenApi
 {
@@ -25,6 +27,7 @@ namespace EksamenApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<restaurantContext>( options => options.UseSqlite("Data Source=Myrestaurant.db") );
             services.AddControllers();
         }
 
@@ -49,3 +52,4 @@ namespace EksamenApi
         }
     }
 }
+
