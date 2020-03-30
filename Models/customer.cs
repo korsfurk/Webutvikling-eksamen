@@ -2,10 +2,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EksamenApi.Models{
 
-    public class kunde{
+    public class customer{
         
         [Key] 
-        public int KundeId { get; set; }
+        public int CustomerId { get; set; }
         public string Name { get; set; }
 
         public string Email { get; set; }
