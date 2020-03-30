@@ -6,7 +6,7 @@ namespace EksamenApi.Controllers{
     public class menuController : ControllerBase {
         private readonly restaurantContext _context;
 
-        public restaurantController(restaurantContext context){
+        public menuController(restaurantContext context){
             _context = context;
         }
     }
