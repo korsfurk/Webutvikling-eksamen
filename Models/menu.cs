@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EksamenApi.Models{
 
-    public class restaurant{
+    public class menu{
         
         [Key] 
         public int Id { get; set; }
