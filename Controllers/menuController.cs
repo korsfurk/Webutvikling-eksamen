@@ -3,7 +3,7 @@ using EksamenApi.Models;
 
 namespace EksamenApi.Controllers{
 
-    public class restaurantController : ControllerBase {
+    public class menuController : ControllerBase {
         private readonly restaurantContext _context;
 
         public restaurantController(restaurantContext context){
