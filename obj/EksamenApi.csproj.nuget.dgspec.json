@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kristinekorsfur/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj": {}
+    "/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj": {}
   },
   "projects": {
-    "/Users/kristinekorsfur/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj": {
+    "/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kristinekorsfur/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj",
+        "projectUniqueName": "/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj",
         "projectName": "EksamenApi",
-        "projectPath": "/Users/kristinekorsfur/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj",
-        "packagesPath": "/Users/kristinekorsfur/.nuget/packages/",
-        "outputPath": "/Users/kristinekorsfur/Documents/GitHub/Webutvikling-eksamen/obj/",
+        "projectPath": "/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/EksamenApi.csproj",
+        "packagesPath": "/Users/norabergseth/.nuget/packages/",
+        "outputPath": "/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kristinekorsfur/.nuget/NuGet/NuGet.Config"
+          "/Users/norabergseth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
         }
       }
     }
