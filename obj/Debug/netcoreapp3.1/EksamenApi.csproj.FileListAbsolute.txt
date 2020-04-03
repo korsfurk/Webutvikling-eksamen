@@ -110,3 +110,5 @@
 /Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/obj/Debug/netcoreapp3.1/staticwebassets/EksamenApi.StaticWebAssets.xml
 /Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/obj/Debug/netcoreapp3.1/EksamenApi.dll
 /Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/obj/Debug/netcoreapp3.1/EksamenApi.pdb
+/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/bin/Debug/netcoreapp3.1/pizza/package-lock.json
+/Users/norabergseth/Documents/GitHub/Webutvikling-eksamen/bin/Debug/netcoreapp3.1/pizza/package.json

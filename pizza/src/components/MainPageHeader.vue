@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <header>
     <h1>{{pageTitle}}</h1>
     <h2>{{slogan}}</h2>
@@ -27,4 +27,4 @@ h2{
 
 
 
-</style>
+</style> -->
