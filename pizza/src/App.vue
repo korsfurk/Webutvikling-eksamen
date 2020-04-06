@@ -1,7 +1,7 @@
 <template>
   <v-app>
 
-    <v-app-bar app dark>
+    <v-app-bar app light>
       <v-toolbar-title>Pizza Q U A R A N T I N E</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn class="mr-3" to="/">Kunde</v-btn>
@@ -19,6 +19,9 @@
 </template>
 
 <style scoped>
+.mr-3{
+  background-color: cadetblue;
 
+}
 </style>
 
