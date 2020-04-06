@@ -4,8 +4,8 @@
     <v-app-bar app dark>
       <v-toolbar-title>Pizza Q U A R A N T I N E</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn class="mr-3" to="/">Admin</v-btn>
-      <v-btn class="mr-3" to="/about">Kunde</v-btn>
+      <v-btn class="mr-3" to="/">Kunde</v-btn>
+      <v-btn class="mr-3" to="/about">Admin</v-btn>
     
     </v-app-bar>
 
@@ -17,4 +17,8 @@
 
   </v-app>
 </template>
+
+<style scoped>
+
+</style>
 
