@@ -1,8 +1,10 @@
 <template>
-  <div class="Kunde">
-    <h1>This is a customer page</h1>
+ <div class="Kunde">
+    <h1>Velkommen</h1>
     <p></p>
   </div>
+
+  
 </template>
 
 <script>
@@ -15,5 +17,8 @@
 <style scoped>
 h1{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  
+
 }
 </style>
