@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <h1>Pizza  Q U A R A N T I N E</h1>
-    <p>Stay away cuz we only do takeaway</p>
+  <div class="Admin">
+    <h1>This is an Admin page</h1>
+    <p></p>
   </div>
 </template>
 
