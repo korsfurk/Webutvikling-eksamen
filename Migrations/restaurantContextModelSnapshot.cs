@@ -49,16 +49,10 @@ namespace EksamenApi.Migrations
                     b.ToTable("Customer");
                 });
 
-            modelBuilder.Entity("EksamenApi.Models.menu", b =>
+            modelBuilder.Entity("EksamenApi.Models.drink", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("DrinkId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("AdminId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CustomerId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("DrinkName")
@@ -67,13 +61,44 @@ namespace EksamenApi.Migrations
                     b.Property<string>("DrinkPrice")
                         .HasColumnType("TEXT");
 
+                    b.HasKey("DrinkId");
+
+                    b.ToTable("Drink");
+                });
+
+            modelBuilder.Entity("EksamenApi.Models.food", b =>
+                {
+                    b.Property<int>("FoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PizzaDescription")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PizzaLabel")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("PizzaName")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PizzaPrice")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.HasKey("FoodId");
+
+                    b.ToTable("Food");
+                });
+
+            modelBuilder.Entity("EksamenApi.Models.menu", b =>
+                {
+                    b.Property<int>("FoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DrinkId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FoodId");
 
                     b.ToTable("Menu");
                 });

@@ -35,21 +35,46 @@ namespace EksamenApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Menu",
+                name: "Drink",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    DrinkId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    CustomerId = table.Column<int>(nullable: false),
-                    AdminId = table.Column<int>(nullable: false),
-                    PizzaName = table.Column<string>(nullable: true),
-                    PizzaPrice = table.Column<string>(nullable: true),
                     DrinkName = table.Column<string>(nullable: true),
                     DrinkPrice = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Menu", x => x.Id);
+                    table.PrimaryKey("PK_Drink", x => x.DrinkId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Food",
+                columns: table => new
+                {
+                    FoodId = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PizzaName = table.Column<string>(nullable: true),
+                    PizzaPrice = table.Column<string>(nullable: true),
+                    PizzaDescription = table.Column<string>(nullable: true),
+                    PizzaLabel = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Food", x => x.FoodId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Menu",
+                columns: table => new
+                {
+                    FoodId = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    DrinkId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Menu", x => x.FoodId);
                 });
         }
 
@@ -60,6 +85,12 @@ namespace EksamenApi.Migrations
 
             migrationBuilder.DropTable(
                 name: "Customer");
+
+            migrationBuilder.DropTable(
+                name: "Drink");
+
+            migrationBuilder.DropTable(
+                name: "Food");
 
             migrationBuilder.DropTable(
                 name: "Menu");
