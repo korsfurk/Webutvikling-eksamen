@@ -1,3 +1,6 @@
+
+
+
 <template>
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
@@ -16,7 +19,7 @@
         </v-card-title>
         </v-card>
 
-         <v-card display grid>
+         <v-card>
         <v-img
           src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
           height="200px"
@@ -26,6 +29,66 @@
         <v-card-title primary-title>
           <div>
             <div class="headline">Pizza Covid</div>
+            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
+          </div>
+        </v-card-title>
+        </v-card>
+
+        <v-card>
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          height="200px"
+        >
+        </v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <div class="headline">Pizza Antibac</div>
+            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
+          </div>
+        </v-card-title>
+        </v-card>
+
+        <v-card>
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          height="200px"
+        >
+        </v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <div class="headline">Pizza Gloves and Masks </div>
+            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
+          </div>
+        </v-card-title>
+        </v-card>
+
+        <v-card>
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          height="200px"
+        >
+        </v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <div class="headline">Pizza Stay at Home</div>
+            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
+          </div>
+        </v-card-title>
+        </v-card>
+
+        <v-card>
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          height="200px"
+        >
+        </v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <div class="headline">Pizza Wuhan</div>
             <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
           </div>
         </v-card-title>
