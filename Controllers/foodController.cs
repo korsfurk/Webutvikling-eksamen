@@ -20,12 +20,6 @@ namespace EksamenApi.Controllers{
             _hosting = hosting;
         }
 
-        [HttpGet]
-        public async Task<IEnumerable<food>> Get(){
-            List<food> foodList = await _context.Food.ToListAsync();
-            return foodList;
-        }
-
         [HttpPost]
         [Route("[action]")]
         public void UploadImage(IFormFile file){
@@ -34,6 +28,12 @@ namespace EksamenApi.Controllers{
             using(var fileStream = new FileStream(absolutePath, FileMode.Create)){
                 file.CopyTo(fileStream);
             }
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<food>> Get(){
+            List<food> foodList = await _context.Food.ToListAsync();
+            return foodList;
         }
     }
 }
