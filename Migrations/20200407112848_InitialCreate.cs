@@ -41,7 +41,8 @@ namespace EksamenApi.Migrations
                     DrinkId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     DrinkName = table.Column<string>(nullable: true),
-                    DrinkPrice = table.Column<string>(nullable: true)
+                    DrinkPrice = table.Column<string>(nullable: true),
+                    DrinkImagesrc = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -57,7 +58,8 @@ namespace EksamenApi.Migrations
                     PizzaName = table.Column<string>(nullable: true),
                     PizzaPrice = table.Column<string>(nullable: true),
                     PizzaDescription = table.Column<string>(nullable: true),
-                    PizzaLabel = table.Column<string>(nullable: true)
+                    PizzaLabel = table.Column<string>(nullable: true),
+                    PizzaImageSrc = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

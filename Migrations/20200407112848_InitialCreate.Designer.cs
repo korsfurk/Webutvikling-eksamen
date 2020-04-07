@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EksamenApi.Migrations
 {
     [DbContext(typeof(restaurantContext))]
-    [Migration("20200406161918_InitialCreate")]
+    [Migration("20200407112848_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,6 +57,9 @@ namespace EksamenApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("DrinkImagesrc")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("DrinkName")
                         .HasColumnType("TEXT");
 
@@ -75,6 +78,9 @@ namespace EksamenApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PizzaDescription")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PizzaImageSrc")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PizzaLabel")

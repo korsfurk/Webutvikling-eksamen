@@ -55,6 +55,9 @@ namespace EksamenApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("DrinkImagesrc")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("DrinkName")
                         .HasColumnType("TEXT");
 
@@ -73,6 +76,9 @@ namespace EksamenApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PizzaDescription")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PizzaImageSrc")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PizzaLabel")
