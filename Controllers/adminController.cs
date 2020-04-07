@@ -44,10 +44,58 @@ namespace EksamenApi.Controllers{
             return customerList;
         }
 
-        [HttpGet("{FoodId}")]
+        [HttpGet("{id}")]
         public async Task<food> GetFoodById(int FoodId){
             food chosenFood = await _context.Food.FirstOrDefaultAsync(food => food.FoodId == FoodId);
             return chosenFood;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<drink> GetDrinkById(int DrinkId){
+            drink chosenDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
+            return chosenDrink;
+        }
+
+        [HttpPost]
+        public async Task<food> Post(food newFood){
+            _context.Food.Add(newFood);
+            await _context.SaveChangesAsync();
+            return newFood;
+        }
+
+        [HttpPost]
+        public async Task<drink> Post(drink newDrink){
+            _context.Drink.Add(newDrink);
+            await _context.SaveChangesAsync();
+            return newDrink;
+        }
+
+        [HttpPut]
+        public async Task<food> Put(food changeFood){
+            _context.Update(changeFood);
+            await _context.SaveChangesAsync();
+            return changeFood;
+        }
+
+        [HttpPut]
+        public async Task<drink> Put(drink changeDrink){
+            _context.Update(changeDrink);
+            await _context.SaveChangesAsync();
+            return changeDrink;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<food> DeleteFood(int FoodId){
+            food deleteFood = await _context.Food.FirstOrDefaultAsync(food => food.FoodId == FoodId);
+            _context.Food.Remove(deleteFood);
+            return deleteFood;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<drink> DeleteDrink(int DrinkId){
+            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
+            _context.Drink.Remove(deleteDrink);
+            return deleteDrink;
         }
 
 
