@@ -40,6 +40,11 @@ namespace EksamenApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseCors("AllowAll");
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
