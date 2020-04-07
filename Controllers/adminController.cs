@@ -25,5 +25,16 @@ namespace EksamenApi.Controllers{
             List<admin> adminList = await _context.Admin.ToListAsync();
             return adminList;
         }
+
+        [HttpPost]
+        [Route("[action]")]
+        public void UploadImage(IFormFile file){
+            string webRootPath = _hosting.WebRootPath;
+            string absolutePath = Path.Combine($"{webRootPath}/images/{file.FileName}");
+            using(var fileStream = new FileStream(absolutePath, FileMode.Create)){
+                file.CopyTo(fileStream);
+            }
+        }
+
     }
 }
