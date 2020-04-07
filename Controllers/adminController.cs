@@ -21,10 +21,36 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet]
-        public async Task<IEnumerable<admin>> Get(){
+        public async Task<IEnumerable<admin>> GetAdmins(){
             List<admin> adminList = await _context.Admin.ToListAsync();
             return adminList;
         }
+
+        [HttpGet]
+        public async Task<IEnumerable<food>> GetFoods(){
+            List<food> foodList = await _context.Food.ToListAsync();
+            return foodList;
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<drink>> GetDrinks(){
+            List<drink> drinkList = await _context.Drink.ToListAsync();
+            return drinkList;
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<customer>> GetCustomers(){
+            List<customer> customerList = await _context.Customer.ToListAsync();
+            return customerList;
+        }
+
+        [HttpGet("{FoodId}")]
+        public async Task<food> GetFoodById(int FoodId){
+            food chosenFood = await _context.Food.FirstOrDefaultAsync(food => food.FoodId == FoodId);
+            return chosenFood;
+        }
+
+
 
         [HttpPost]
         [Route("[action]")]

@@ -21,9 +21,15 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet]
-        public async Task<IEnumerable<customer>> Get(){
-            List<customer> customerList = await _context.Customer.ToListAsync();
-            return customerList;
+        public async Task<IEnumerable<food>> GetFoods(){
+            List<food> foodList = await _context.Food.ToListAsync();
+            return foodList;
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<drink>> GetDrinks(){
+            List<drink> drinkList = await _context.Drink.ToListAsync();
+            return drinkList;
         }
     }
 }
