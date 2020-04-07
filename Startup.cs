@@ -28,7 +28,19 @@ namespace EksamenApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<restaurantContext>( options => options.UseSqlite("Data Source=Myrestaurant.db") );
+            services.AddDbContext<restaurantContext>( 
+                options => options.UseSqlite("Data Source=Myrestaurant.db") 
+            );
+
+            services.AddCors(
+                options => options.AddPolicy("AllowAll",
+                    builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                )
+            );
+            
             services.AddControllers();
         }
 
