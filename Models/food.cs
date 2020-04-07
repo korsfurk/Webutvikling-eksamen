@@ -14,6 +14,8 @@ namespace EksamenApi.Models{
 
         public string PizzaLabel { get; set; }
 
+        public string PizzaImageSrc { get; set; }
+
     }
 
     

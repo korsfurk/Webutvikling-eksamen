@@ -11,6 +11,8 @@ namespace EksamenApi.Models{
 
         public string DrinkPrice { get; set; }
 
+        public string DrinkImagesrc { get; set; }
+
     }
 
     
