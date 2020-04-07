@@ -25,5 +25,9 @@ namespace EksamenApi.Controllers{
             List<food> foodList = await _context.Food.ToListAsync();
             return foodList;
         }
+
+        [HttpPost]
+        [Route("[action]")]
+        
     }
 }
