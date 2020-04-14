@@ -14,7 +14,7 @@
         <v-card-title primary-title>
           <div>
             <div class="headline">Pizza Corona</div>
-            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
+            <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe med masse digg!</span>
           </div>
         </v-card-title>
         </v-card>
@@ -58,7 +58,7 @@
 
         <v-card-title primary-title>
           <div>
-            <div class="headline">Pizza Gloves and Masks </div>
+            <div class="headline">Pizza Gloves and Facemasks </div>
             <span class="grey--text">Den beste pizzaen du noen gang kommer til å smake. Tynn skorpe, masse digg og ekstra sterk!</span>
           </div>
         </v-card-title>
