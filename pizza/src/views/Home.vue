@@ -1,8 +1,8 @@
 
 <template>
-<v-app>
+<div>
     <TheHeader/>
-  </v-app>
+</div>
 </template>
 
 <script>

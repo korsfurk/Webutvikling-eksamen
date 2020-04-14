@@ -15,8 +15,6 @@ export default {
 
 <style scoped>
 header{
-
-margin-top: 100%;
 font-family: Arial, Helvetica, sans-serif;
 
 }
