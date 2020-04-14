@@ -14,18 +14,18 @@
       </v-container>
     </v-content>
 
-  <MainPageheader/>
+  <TheHeader/>
   </v-app>
 </template>
 
 <script>
 
-import MainPageHeader from "../src/components/MainPageHeader"
+import TheHeader from "../src/layout/TheHeader"
 
 export default {
   name: "App",
   components: {
-    MainPageHeader
+    TheHeader
   }
 }
 </script>
