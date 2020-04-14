@@ -6,7 +6,7 @@
                 <li 
                     v-for="(value, name, index) in contactInfo"
                     v-bind:key="index">
-                    {{name}} : {{value}}
+                    {{value}}
                 </li>
             </ul>
         </section>
@@ -16,7 +16,7 @@
                 <li 
                     v-for="(value, name, index) in privacyPolicy"
                     v-bind:key="index">
-                    {{name}} : {{value}}
+                    {{value}}
                 </li>
             </ul>
         </section>
