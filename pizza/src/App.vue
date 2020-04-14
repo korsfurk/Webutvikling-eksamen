@@ -4,7 +4,13 @@
     <v-container>
      
       <v-content><!--skaper riktig padding mht. navbaren-->
-        <v-app-bar class="nav-bar" app extended shrink-on-scroll>
+        <v-app-bar 
+          class="nav-bar"
+          app 
+          extended 
+          shrink-on-scroll
+          src="https://picsum.photos/1920/1080?random"
+          >
           <TheHeader class="logo-txt"/>
           <v-spacer></v-spacer>
           <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
