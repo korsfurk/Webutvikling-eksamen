@@ -5,8 +5,7 @@
      
       <v-content><!--skaper riktig padding mht. navbaren-->
         <v-app-bar class="nav-bar" app extended shrink-on-scroll>
-          <v-spacer></v-spacer>
-          <TheHeader/>
+          <TheHeader class="logo-txt"/>
           <v-spacer></v-spacer>
           <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
           <v-btn class="mr-3" to="/about">Admin</v-btn>
@@ -59,5 +58,10 @@ export default {
   right: 100px;
 }
 
+.logo-txt{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
 </style>
 
