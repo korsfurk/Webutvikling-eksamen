@@ -6,7 +6,7 @@
                 <li 
                     v-for="(value, name, index) in contactInfo"
                     v-bind:key="index">
-                    {{value}}
+                     {{value}}
                 </li>
             </ul>
         </section>
@@ -43,7 +43,6 @@ export default {
 </script>
 
 <style scoped>
- h3{
-     font-family: cursive;
- }
+
+
 </style>
