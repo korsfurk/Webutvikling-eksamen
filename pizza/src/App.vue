@@ -1,7 +1,7 @@
 <template>
   <v-app>
 
-    <v-app-bar app dark>
+    <v-app-bar app light>
       <v-spacer></v-spacer>
       <v-btn class="mr-3" to="/">Kunde</v-btn>
       <v-btn class="mr-3" to="/about">Admin</v-btn>
