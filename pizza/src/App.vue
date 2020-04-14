@@ -43,9 +43,8 @@ export default {
 </script>
 
 <style scoped>
-.mr-3{
-  background-color: cadetblue;
 
-}
+
+
 </style>
 
