@@ -13,7 +13,11 @@
         <section>
             <h3>Privacy Policy</h3>
             <ul>
-                <li></li>
+                <li 
+                    v-for="(value, name, index) in privacyPolicy"
+                    v-bind:key="index">
+                    {{name}} : {{value}}
+                </li>
             </ul>
         </section>
     </footer>

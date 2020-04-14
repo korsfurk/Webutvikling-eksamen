@@ -18,6 +18,13 @@
       </v-app-bar>
     </v-content>
 
+  <router-view></router-view><!--Hvor komponentene (view) vises-->
+      
+  </v-container>
+
+  <TheHeader/>
+  <TheFooter/>
+
   </v-app>
 </template>
 
