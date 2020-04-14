@@ -4,11 +4,11 @@
     <v-container>
      
       <v-content><!--skaper riktig padding mht. navbaren-->
-        <v-app-bar app extended shrink-on-scroll>
+        <v-app-bar class="nav-bar" app extended shrink-on-scroll>
           <v-spacer></v-spacer>
           <TheHeader/>
           <v-spacer></v-spacer>
-          <v-btn class="mr-3" to="/">Kunde</v-btn>
+          <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
           <v-btn class="mr-3" to="/about">Admin</v-btn>
         
         </v-app-bar>
@@ -45,6 +45,19 @@ export default {
 </script>
 
 <style scoped>
+
+
+.mr-3{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+#cust-btn{
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
 
 </style>
 
