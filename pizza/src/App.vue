@@ -20,7 +20,7 @@
 
   <router-view></router-view><!--Hvor komponentene (view) vises-->
       
-  </v-container>
+
 
   <TheHeader/>
   <TheFooter/>
