@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <TheHeader/>
     <v-container>
       <v-app-bar app light>
         <v-spacer></v-spacer>
@@ -22,7 +23,7 @@
       
   </v-container><!--tilrettelegger for breakpoints-->
 
-  <TheHeader/>
+  
   <TheFooter/>
 
   </v-app>
