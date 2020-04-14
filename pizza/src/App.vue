@@ -5,17 +5,18 @@
       <v-spacer></v-spacer>
       <v-btn class="mr-3" to="/">Kunde</v-btn>
       <v-btn class="mr-3" to="/about">Admin</v-btn>
-    
     </v-app-bar>
+    <v-container></v-container><!--tilrettelegger for breakpoints-->
 
+    
     <v-content><!--skaper riktig padding mht. navbaren-->
-      <v-container><!--tilrettelegger for breakpoints-->
-        <router-view></router-view><!--Hvor komponentene (view) vises-->
-      </v-container>
+      <v-app-bar app light>
+        <v-spacer></v-spacer>
+        <v-btn class="mr-3" to="/">Kunde</v-btn>
+        <v-btn class="mr-3" to="/about">Admin</v-btn>
+      
+      </v-app-bar>
     </v-content>
-
-  <TheHeader/>
-  <TheFooter/>
 
   </v-app>
 </template>
