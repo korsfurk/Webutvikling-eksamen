@@ -10,7 +10,7 @@
 </div>
 
     <TheFooter/>
-  </v-app>
+
 
 
   </div>
