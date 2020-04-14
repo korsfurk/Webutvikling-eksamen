@@ -1,6 +1,13 @@
 <template>
   <v-app>
-    <v-container><!--tilrettelegger for breakpoints-->
+
+    <v-app-bar app light>
+      <v-spacer></v-spacer>
+      <v-btn class="mr-3" to="/">Kunde</v-btn>
+      <v-btn class="mr-3" to="/about">Admin</v-btn>
+    </v-app-bar>
+    <v-container></v-container><!--tilrettelegger for breakpoints-->
+
     
     <v-content><!--skaper riktig padding mht. navbaren-->
       <v-app-bar app light>
@@ -13,7 +20,7 @@
 
   <router-view></router-view><!--Hvor komponentene (view) vises-->
       
-  </v-container>
+
 
   <TheHeader/>
   <TheFooter/>
