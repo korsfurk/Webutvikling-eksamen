@@ -14,6 +14,7 @@
       </v-container>
     </v-content>
 
+  <MainPageheader/>
   </v-app>
 </template>
 
@@ -22,7 +23,10 @@
 import MainPageHeader from "../src/components/MainPageHeader"
 
 export default {
-  
+  name: "App",
+  components: {
+    MainPageHeader
+  }
 }
 </script>
 
