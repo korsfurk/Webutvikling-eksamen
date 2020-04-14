@@ -4,9 +4,11 @@
   </div>
 </template>
 
+
 <script>
+
 export default {
-  
+  name: "Admin"
 }
 </script>
 
@@ -17,4 +19,3 @@ h1{
 }
 </style>
 
-<!--hei krisitne-->
