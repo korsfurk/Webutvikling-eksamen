@@ -1,12 +1,19 @@
 
 <template>
+
 <div>
+
+  <div>
+
     <TheHeader/>
 
 </div>
 
     <TheFooter/>
   </v-app>
+
+
+  </div>
 
 </template>
 
