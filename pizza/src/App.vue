@@ -2,14 +2,7 @@
   <v-app>
     <TheHeader/>
     <v-container>
-      <v-app-bar app light>
-        <v-spacer></v-spacer>
-        <v-btn class="mr-3" to="/">Kunde</v-btn>
-        <v-btn class="mr-3" to="/about">Admin</v-btn>
-      </v-app-bar>
-    
-
-    
+     
       <v-content><!--skaper riktig padding mht. navbaren-->
         <v-app-bar app light>
           <v-spacer></v-spacer>
