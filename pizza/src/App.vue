@@ -4,7 +4,7 @@
     <v-container>
      
       <v-content><!--skaper riktig padding mht. navbaren-->
-        <v-app-bar app light>
+        <v-app-bar app bottom>
           <v-spacer></v-spacer>
           <v-btn class="mr-3" to="/">Kunde</v-btn>
           <v-btn class="mr-3" to="/about">Admin</v-btn>
