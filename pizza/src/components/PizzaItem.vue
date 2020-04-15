@@ -45,7 +45,10 @@ export default {
         PizzaDescription: {
             type: String
         }
-    }
+    },
+    data: () => ({
+        show: false,
+    }),
     
 }
 </script>

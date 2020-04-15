@@ -13,12 +13,17 @@
 </template>
 
 <script>
+import DrinkItem from '@/components/DrinkItem'
+
 export default {
     name: "DrinkList",
     data(){
         return {
             drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkImageSrc: "fanta.jpg"}]
         }
+    },
+    components: {
+        DrinkItem
     }
 }
 </script>

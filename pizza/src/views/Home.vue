@@ -20,8 +20,9 @@ export default {
   name: "App",
   components: {
     TheHeader,
-    TheFooter,
-    DrinkList
+    DrinkList,
+    TheFooter
+    
   }
 }
 

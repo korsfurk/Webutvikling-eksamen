@@ -1,11 +1,11 @@
 <template>
     <v-card>
-        <v-img :src="`https://localhost:5001/images/${drinkImageSrc}`"
+        <v-img :src="`https://localhost:5001/images/${DrinkImageSrc}`"
         height="200px"
         >
         </v-img>
-        <v-card-title>{{ drinkName }}</v-card-title>
-        <v-card-subtitle>{{ drinPrice }}</v-card-subtitle>
+        <v-card-title>{{ DrinkName }}</v-card-title>
+        <v-card-subtitle>{{ DrinkPrice }}</v-card-subtitle>
     </v-card>
 </template>
 
@@ -13,13 +13,13 @@
 export default {
     name: "DrinkItem",
     props: {
-        drinkName: {
+        DrinkName: {
             type: String
         },
-        drinkImageSrc: {
+        DrinkImageSrc: {
             type: String
         },
-        drinkPrice: {
+        DrinkPrice: {
             type: String
         }
     }
