@@ -9,7 +9,7 @@
           app 
           extended 
           shrink-on-scroll
-          src="https://picsum.photos/1920/1080?random"
+          src="https://localhost:5001/images/beef.jpg"
           >
           <TheHeader class="logo-txt"/>
           <v-spacer></v-spacer>

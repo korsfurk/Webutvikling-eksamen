@@ -5,7 +5,7 @@
             height="200px"
             >
         </v-img>
-        <v-card-title>{{ name }}</v-card-title>
+        <v-card-title>{{ PizzaName }}</v-card-title>
     </v-card>
 </template>
 
