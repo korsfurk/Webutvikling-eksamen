@@ -27,18 +27,21 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<food>> GetFoods(){
             List<food> foodList = await _context.Food.ToListAsync();
             return foodList;
         }
 
         [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<drink>> GetDrinks(){
             List<drink> drinkList = await _context.Drink.ToListAsync();
             return drinkList;
         }
 
         [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<customer>> GetCustomers(){
             List<customer> customerList = await _context.Customer.ToListAsync();
             return customerList;
@@ -51,6 +54,7 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet("{id}")]
+        [Route("[action]/{id}")]
         public async Task<drink> GetDrinkById(int DrinkId){
             drink chosenDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
             return chosenDrink;
@@ -64,6 +68,7 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpPost]
+        [Route("[action]")]
         public async Task<drink> Post(drink newDrink){
             _context.Drink.Add(newDrink);
             await _context.SaveChangesAsync();
@@ -78,6 +83,7 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpPut]
+        [Route("[action]")]
         public async Task<drink> Put(drink changeDrink){
             _context.Update(changeDrink);
             await _context.SaveChangesAsync();
@@ -92,6 +98,7 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpDelete("{id}")]
+        [Route("[action]/{id}")]
         public async Task<drink> DeleteDrink(int DrinkId){
             drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
             _context.Drink.Remove(deleteDrink);
