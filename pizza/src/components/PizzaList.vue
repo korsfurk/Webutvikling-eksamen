@@ -19,7 +19,7 @@ export default {
     data(){
         return {
             pizzas: [ { 
-                id: 999, name: "TESTFIDO", imageSrc: "fido.jpg"  
+                id: 999, name: "TESTPIZZA", imageSrc: "fido.jpg"  
             } ]
         }
     },
