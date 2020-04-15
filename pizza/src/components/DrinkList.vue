@@ -1,11 +1,11 @@
 <template>
     <div>
         <v-row>
-            <v-col v-for="drink in drinks" :key="drink.DrinkId">
+            <v-col v-for="drink in drinks" :key="drink.drinkId">
                 <DrinkItem 
-                    :DrinkId="drink.DrinkId"
-                    :DrinkName="drink.DrinkName"
-                    :DrinkImageSrc="drink.DrinkImageSrc"
+                    :drinkId="drink.drinkId"
+                    :drinkName="drink.drinkName"
+                    :drinkImageSrc="drink.drinkImageSrc"
                     />
             </v-col>
         </v-row>
@@ -17,7 +17,7 @@ export default {
     name: "DrinkList",
     data(){
         return {
-            drinks: [ { DrinkId: 999, DrinkName: "TESTFANTA", DrinkImageSrc: "fanta.jpg"}]
+            drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkImageSrc: "fanta.jpg"}]
         }
     }
 }
