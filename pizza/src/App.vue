@@ -24,13 +24,7 @@
   </v-container><!--tilrettelegger for breakpoints-->
 
   <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
-  <TheFooter/>
+ 
 
   </v-app>
 </template>
