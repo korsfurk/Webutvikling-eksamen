@@ -20,6 +20,7 @@
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
+
   <TheFooter/>
  
 
