@@ -1,5 +1,6 @@
 
 <template>
+
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
@@ -28,18 +29,32 @@
       </v-card>
     </v-flex>
   </v-layout>
+
+  <div>
+    <TheHeader/>
+
+    <h1>Menu</h1>
+    <DrinkList/>
+
+    <TheFooter/>
+  </div>
+
 </template>
 
 <script>
 
 import TheHeader from "../src/layout/TheHeader"
+import DrinkList from "@/components/Drinklist"
 import TheFooter from "../src/layout/TheFooter"
+
 
 export default {
   name: "App",
   components: {
     TheHeader,
+    DrinkList,
     TheFooter
+    
   }
 }
 

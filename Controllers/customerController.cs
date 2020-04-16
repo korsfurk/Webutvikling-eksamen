@@ -27,6 +27,7 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<drink>> GetDrinks(){
             List<drink> drinkList = await _context.Drink.ToListAsync();
             return drinkList;
