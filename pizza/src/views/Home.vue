@@ -15,7 +15,7 @@
 <script>
 
 import TheHeader from "../src/layout/TheHeader"
-import DrinkList from "@/components/Drinklist"
+import DrinkList from "@/components/DrinkList"
 import TheFooter from "../src/layout/TheFooter"
 
 

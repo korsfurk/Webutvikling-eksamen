@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card max-width="350px">
         <v-img :src="`https://localhost:5001/images/${drinkImageSrc}`"
         height="200px"
         >
