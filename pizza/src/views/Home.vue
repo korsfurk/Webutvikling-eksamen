@@ -2,7 +2,11 @@
 <template>
 
 
+
 <div>
+
+  <div>
+
     <TheHeader/>
 
     <h1>Menu</h1>
