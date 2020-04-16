@@ -6,6 +6,7 @@
                     :drinkId="drink.drinkId"
                     :drinkName="drink.drinkName"
                     :drinkImageSrc="drink.drinkImageSrc"
+                    :drinkprice="drink.drinkPrice"
                     />
             </v-col>
         </v-row>
@@ -19,7 +20,7 @@ export default {
     name: "DrinkList",
     data(){
         return {
-            drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkImageSrc: "fanta.jpg"}]
+            drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkPrice:"20", drinkImageSrc: "fanta.jpg"}]
         }
     },
     components: {
