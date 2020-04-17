@@ -44,14 +44,14 @@ export default {
 
 <style scoped>
 h3{
-    background-color: #B4D7C2;
+    background-color: #C8E6C9;
     text-align: center;
     color: white;
     
 }
 
 li{
-    background-color: #B4D7C2;
+    background-color: #C8E6C9;
     text-align: center;
     list-style-type: none;
       
@@ -59,7 +59,7 @@ li{
 }
 
 ul{
-    background-color: #B4D7C2;
+    background-color: #C8E6C9;
 }
 
 

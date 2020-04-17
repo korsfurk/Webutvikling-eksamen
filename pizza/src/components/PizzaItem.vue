@@ -1,12 +1,12 @@
 <template>
-    <v-card>
+    <v-card max-width="350px">
         <v-img 
-            :src="`https://localhost:5001/images/${PizzaImageSrc}`"
+            :src="`https://localhost:5001/images/${pizzaImageSrc}`"
             height="200px"
             >
         </v-img>
-        <v-card-title>{{ PizzaName }}</v-card-title>
-        <v-card-subtitle>{{ PizzaPrice }}</v-card-subtitle>
+        <v-card-title>{{ pizzaName }}</v-card-title>
+        <v-card-subtitle>{{ pizzaPrice }}</v-card-subtitle>
        
         <v-card-actions>
             <v-btn text> Order </v-btn>
@@ -24,7 +24,7 @@
                 <v-divider></v-divider>
                 <v-card-text>{{ PizzaDescription }}</v-card-text>
             </div>
-        </v-expand-transition>
+        </v-expand-transition> 
 
     </v-card>
 </template>
