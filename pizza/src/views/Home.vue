@@ -4,7 +4,7 @@
 
     <TheHeader/>
 
-    <h1>Menu</h1>
+    <section id="bg"></section>
     <DrinkList/>
 
     <TheFooter/>
@@ -28,6 +28,7 @@ export default {
     
   }
 }
+
 
 
 

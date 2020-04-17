@@ -6,7 +6,7 @@
                     :drinkId="drink.drinkId"
                     :drinkName="drink.drinkName"
                     :drinkImageSrc="drink.drinkImageSrc"
-                    :drinkprice="drink.drinkPrice"
+                    :drinkPrice="drink.drinkPrice"
                     />
             </v-col>
         </v-row>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import DrinkItem from '@/components/DrinkItem'
 
 export default {
@@ -22,6 +23,12 @@ export default {
         return {
             drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkPrice:"20", drinkImageSrc: "fanta.jpg"}]
         }
+    },
+    created() {
+        axios.get("https://localhost:5001/admin/GetDrinks")
+            .then( result => {
+                this.drinks = result.data;
+            } )
     },
     components: {
         DrinkItem
