@@ -6,7 +6,7 @@
             >
         </v-img>
         <v-card-title>{{ pizzaName }}</v-card-title>
-        <v-card-subtitle>{{ pizzaPrice }}</v-card-subtitle>
+        <v-card-subtitle>{{ pizzaPrice }} kr</v-card-subtitle>
        
         <v-card-actions>
             <v-btn text> Order </v-btn>
@@ -22,7 +22,7 @@
         <v-expand-transition>
             <div v-show="show">
                 <v-divider></v-divider>
-                <v-card-text>{{ PizzaDescription }}</v-card-text>
+                <v-card-text>{{ pizzaDescription }}</v-card-text>
             </div>
         </v-expand-transition> 
 
@@ -33,16 +33,16 @@
 export default {
     name: "PizzaItem",
     props: {
-        PizzaName: {
+        pizzaName: {
             type: String
         },
-        PizzaImageSrc: {
+        pizzaImageSrc: {
             type: String
         },
-        Pizzaprice: {
+        pizzaPrice: {
             type: String
         },
-        PizzaDescription: {
+        pizzaDescription: {
             type: String
         }
     },

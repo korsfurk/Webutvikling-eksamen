@@ -21,8 +21,7 @@ export default {
             type: String
         },
         drinkPrice: {
-            type: String,
-            appear: true 
+            type: String 
         }
     }
 }

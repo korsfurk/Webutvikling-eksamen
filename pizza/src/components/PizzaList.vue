@@ -6,7 +6,8 @@
                     :pizzaId="pizza.pizzaId" 
                     :pizzaName="pizza.pizzaName" 
                     :pizzaImageSrc="pizza.pizzaImageSrc"
-                    :pizzaPrice="pizza.pizzaPrice"  
+                    :pizzaPrice="pizza.pizzaPrice"
+                    :pizzaDescription="pizza.pizzaDescription"  
                     />
             </v-col>
         </v-row>
@@ -21,7 +22,7 @@ export default {
     name: "PizzaList",
     data(){
         return {
-            pizzas: [ { id: 999, name: "TESTPIZZA", imageSrc: "beef.jpg" } ]
+            pizzas: [ { pizzaId: 999, pizzaName: "TESTPIZZA", pizzaImageSrc: "beef.jpg", pizzaPrice: "200", pizzaDescription: "God." } ]
         }
     },
     created(){

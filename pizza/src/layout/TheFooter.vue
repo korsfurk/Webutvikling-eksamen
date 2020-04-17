@@ -65,7 +65,7 @@ ul{
 
 
 footer{
-    position:absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
     padding-bottom:2.5rem;
