@@ -16,14 +16,14 @@ export default {
     name: "PizzaForm",
     data(){
         return {
-            newPizza: { name: "", imageSrc: "" },
+            newPizza: { pizzaName: "", pizzaImageSrc: "", pizzaPrice: "", pizzaDescription: "" },
             file: null
         }
     },
 }
     methods: {
         postPizza();
-            this.newPizza.imageSrc = this.file.name;
+            this.newPizza.pizzaImageSrc = this.file.name;
 
             let data = new FormData();
             data.append("file", this.file);

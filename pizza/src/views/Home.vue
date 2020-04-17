@@ -12,7 +12,7 @@ import PizzaList from '@/components/PizzaList'
 import DrinkList from '@/components/DrinkList'
 
 export default {
-  name: "App",
+  name: "Home",
   components: {
     DrinkList,
     PizzaList

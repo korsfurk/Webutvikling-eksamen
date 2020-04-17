@@ -1,14 +1,21 @@
 <template>
   <div class="Admin">
-    <h1>This is an admin page</h1>
+    <PizzaList/>
+    <DrinkList/>
   </div>
 </template>
 
 
 <script>
+import PizzaList from '@components/PizzaList'
+import DrinkList from '@components/DrinkList'
 
 export default {
-  name: "Admin"
+  name: "Admin",
+  components: {
+    PizzaList,
+    DrinkList
+  }
 }
 </script>
 
