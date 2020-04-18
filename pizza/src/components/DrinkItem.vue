@@ -6,7 +6,7 @@
         >
         </v-img>
         <v-card-title>{{ drinkName }}</v-card-title>
-        <v-card-subtitle>{{ drinkPrice }}</v-card-subtitle>
+        <v-card-subtitle>{{ drinkPrice }} kr</v-card-subtitle>
 
         <v-card-actions>
             <v-btn text>Order</v-btn>
@@ -22,7 +22,8 @@ export default {
             type: String
         },
         drinkImageSrc: {
-            type: String
+            type: String,
+            default: "outofstock.png"
         },
         drinkPrice: {
             type: String 

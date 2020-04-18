@@ -22,6 +22,8 @@
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
+<h1>hei på deg din gamle sei</h1>
+
   <!--TheFooter-->
   <v-footer padless>
     <v-card flat tile width="100%" class="green lighten-4 text-center">
