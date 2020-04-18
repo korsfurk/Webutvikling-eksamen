@@ -21,11 +21,25 @@
 </v-container><!--tilrettelegger for breakpoints-->
 
   <!--<TheFooter/>-->
-  <v-footer padless fixed >
-    <v-card flat tile class="green lighten-4">
+  <v-footer padless >
+    <v-card flat tile width="100%" class="green lighten-4 text-center">
+
       <v-card-text>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-text>
+
+      <v-card-text class="pt-0">
         <TheFooter/>
       </v-card-text>
+
+      <v-divider></v-divider>
+
+      <v-card-text>
+        <strong>Pizza Q U A R A N T I N E - 2020</strong>
+      </v-card-text>
+
     </v-card>
   </v-footer>
  

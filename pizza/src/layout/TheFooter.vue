@@ -43,33 +43,10 @@ export default {
 </script>
 
 <style scoped>
-h3{
-    background-color: #C8E6C9;
-    text-align: center;
-    color: white;
-    
-}
+
 
 li{
-    background-color: #C8E6C9;
-    text-align: center;
     list-style-type: none;
-      
-
 }
 
-ul{
-    background-color: #C8E6C9;
-}
-
-
-
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-bottom:2.5rem;
-    height:5rem;
-
-}
-</style>
+</style> 
