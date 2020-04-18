@@ -7,6 +7,10 @@
         </v-img>
         <v-card-title>{{ drinkName }}</v-card-title>
         <v-card-subtitle>{{ drinkPrice }}</v-card-subtitle>
+
+        <v-card-actions>
+            <v-btn text>Order</v-btn>
+        </v-card-actions>
     </v-card>
 </template>
 

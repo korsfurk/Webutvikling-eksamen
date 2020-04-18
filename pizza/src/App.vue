@@ -1,6 +1,7 @@
 <template>
   <v-app>
   
+  <!--The header + navigation-->
   <v-app-bar 
     class="nav-bar"
     app 
@@ -14,14 +15,15 @@
     <v-btn class="mr-3" to="/about">Admin</v-btn>
 </v-app-bar>
 
+<!--Content-->
 <v-container>  
   <v-content><!--skaper riktig padding mht. navbaren-->
     <router-view/><!--Hvor komponentene (view) vises-->
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
-  <!--<TheFooter/>-->
-  <v-footer padless >
+  <!--TheFooter-->
+  <v-footer padless>
     <v-card flat tile width="100%" class="green lighten-4 text-center">
 
       <v-card-text>
@@ -57,7 +59,14 @@ export default {
   components: {
     TheHeader,
     TheFooter
-  }
+  },
+  data: () => ({
+    icons: [
+      'mdi-facebook',
+      'mdi-twitter',
+      'mdi-instagram'
+    ]
+  })
 }
 </script>
 
