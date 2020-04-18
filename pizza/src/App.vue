@@ -22,7 +22,7 @@
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
-<h1>hei på deg din gamle sei</h1>
+<h1>hei på deg </h1>
 
   <!--TheFooter-->
   <v-footer padless>
