@@ -1,7 +1,7 @@
 <template>
 <header>
- <h1>Pizza Q U A R A N T I N E</h1>
- <p> Take me away with take-away </p>
+    <h1>Pizza Q U A R A N T I N E</h1>
+    <p> Take me away with take-away </p>
 </header>
 </template>
 
@@ -15,14 +15,9 @@ export default {
 
 <style scoped>
 header{
-font-family: Arial, Helvetica, sans-serif;
-color:white; 
-
-
-}
-
-p{
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
+
 </style>
 

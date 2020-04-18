@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-row>
-            <v-col v-for="pizza in pizzas" :key="pizza.pizzaId">
+            <v-col cols="12" sm="6" lg="4" v-for="pizza in pizzas" :key="pizza.pizzaId">
                 <PizzaItem 
                     :pizzaId="pizza.pizzaId" 
                     :pizzaName="pizza.pizzaName" 

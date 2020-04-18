@@ -1,20 +1,16 @@
 <template>
   <div class="Admin">
-    <PizzaList/>
-    <DrinkList/>
+    <h1>Add, edit or delete from menu</h1>
+    <PizzaForm/>
   </div>
 </template>
 
 
 <script>
-import PizzaList from '@components/PizzaList'
-import DrinkList from '@components/DrinkList'
 
 export default {
   name: "Admin",
   components: {
-    PizzaList,
-    DrinkList
   }
 }
 </script>

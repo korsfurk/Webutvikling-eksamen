@@ -20,7 +20,14 @@
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
-  <TheFooter/>
+  <!--<TheFooter/>-->
+  <v-footer padless fixed >
+    <v-card flat tile class="green lighten-4">
+      <v-card-text>
+        <TheFooter/>
+      </v-card-text>
+    </v-card>
+  </v-footer>
  
 
   </v-app>
