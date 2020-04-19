@@ -11,7 +11,7 @@
     >
     <TheHeader/>
     <v-spacer></v-spacer>
-    
+    <v-btn class="" to="/">Home</v-btn>
 </v-app-bar>
 
 <!--Content-->
@@ -36,7 +36,7 @@
       </v-card-text>
 
       <v-spacer></v-spacer>
-      <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
+      <v-btn class="mr-3" id="cust-btn" to="/">Customer</v-btn>
       <v-btn class="mr-3" to="/admin">Admin</v-btn>
 
       <v-divider></v-divider>
