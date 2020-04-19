@@ -1,7 +1,7 @@
-<template >
+<template>
   <v-app>
   
-  <!--The header + navigation-->
+  <!--Header + navigation-->
   <v-app-bar 
     class="nav-bar"
     app 
@@ -22,9 +22,7 @@
   </v-content>
 </v-container><!--tilrettelegger for breakpoints-->
 
-<h1>hei på deg </h1>
-
-  <!--TheFooter-->
+  <!--Footer-->
   <v-footer padless>
     <v-card flat tile width="100%" class="green lighten-4 text-center">
 
