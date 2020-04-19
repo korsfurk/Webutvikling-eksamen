@@ -1,7 +1,7 @@
 <template>
     <v-card max-width="350px">
         <v-img 
-        :src="`https://localhost:5001/images/${drinkImageSrc}`"
+        :src="`https://localhost:5001/images/${drinkImagesrc}`"
         height="200px"
         >
         </v-img>
@@ -21,9 +21,9 @@ export default {
         drinkName: {
             type: String
         },
-        drinkImageSrc: {
+        drinkImagesrc: {
             type: String,
-            default: "outofstock.png"
+            
         },
         drinkPrice: {
             type: String 

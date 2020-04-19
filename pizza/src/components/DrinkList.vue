@@ -5,7 +5,7 @@
                 <DrinkItem 
                     :drinkId="drink.drinkId"
                     :drinkName="drink.drinkName"
-                    :drinkImageSrc="drink.drinkImageSrc"
+                    :drinkImagesrc="drink.drinkImagesrc"
                     :drinkPrice="drink.drinkPrice"
                     />
             </v-col>
@@ -21,11 +21,11 @@ export default {
     name: "DrinkList",
     data(){
         return {
-            drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkPrice:"20", drinkImageSrc: "fanta.jpg"}]
+            drinks: [ { drinkId: 999, drinkName: "TESTFANTA", drinkPrice:"20", drinkImagesrc: "fanta.jpg"}]
         }
     },
     created() {
-        axios.get("https://localhost:5001/customer/Getdrinks")
+        axios.get("https://localhost:5001/customer/GetDrinks")
             .then( result => {
                 this.drinks = result.data;
             } )
