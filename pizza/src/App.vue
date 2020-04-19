@@ -1,6 +1,6 @@
 <template>
   <v-app class="black">
-  <styles/>
+  
   <!--Header + navigation-->
   <v-app-bar 
     class="nav-bar"
@@ -16,11 +16,11 @@
 </v-app-bar>
 
 <!--Content-->
-<v-container class="green lighten-4">  
+ 
   <v-content><!--skaper riktig padding mht. navbaren-->
     <router-view/><!--Hvor komponentene (view) vises-->
   </v-content>
-</v-container><!--tilrettelegger for breakpoints-->
+
 
   <!--Footer-->
   <v-footer padless>
@@ -53,14 +53,14 @@
 
 import TheHeader from "../src/layout/TheHeader"
 import TheFooter from "../src/layout/TheFooter"
-import styles from './app.css'
+
 
 export default {
   name: "App",
   components: {
     TheHeader,
     TheFooter,
-    styles
+    
   },
   data: () => ({
     icons: [
@@ -93,8 +93,5 @@ export default {
   left: 20%;
 }
 
-.app{
-  background-color: black;
-}
 </style>
 

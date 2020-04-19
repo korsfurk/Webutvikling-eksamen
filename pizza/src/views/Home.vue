@@ -1,8 +1,10 @@
 
 <template>
   <div class="green lighten-4">
-    <PizzaList/>
+    <v-container>
+    <PizzaList />
     <DrinkList/>
+    </v-container>
   </div>
 
 </template>
