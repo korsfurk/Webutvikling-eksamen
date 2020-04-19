@@ -32,5 +32,20 @@ namespace EksamenApi.Controllers{
             List<drink> drinkList = await _context.Drink.ToListAsync();
             return drinkList;
         }
+
+        [HttpPost]
+        public async Task<food> Post(food newFood){
+            _context.Food.Add(newFood);
+            await _context.SaveChangesAsync();
+            return newFood;
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<drink> Post(drink newDrink){
+            _context.Drink.Add(newDrink);
+            await _context.SaveChangesAsync();
+            return newDrink;
+        }
     }
 }
