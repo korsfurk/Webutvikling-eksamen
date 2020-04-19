@@ -1,4 +1,4 @@
-<template>
+<template class="green lighten-4">
   <v-app>
   
   <!--The header + navigation-->
