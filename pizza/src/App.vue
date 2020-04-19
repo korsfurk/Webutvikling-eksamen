@@ -1,6 +1,6 @@
 <template>
-  <v-app class="app">
-  
+  <v-app class="black">
+  <styles/>
   <!--Header + navigation-->
   <v-app-bar 
     class="nav-bar"
@@ -53,12 +53,14 @@
 
 import TheHeader from "../src/layout/TheHeader"
 import TheFooter from "../src/layout/TheFooter"
+import styles from './app.css'
 
 export default {
   name: "App",
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    styles
   },
   data: () => ({
     icons: [
