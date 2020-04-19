@@ -1,8 +1,5 @@
 
 <template>
-
-
-
 <div>
 
   <div>
@@ -10,6 +7,10 @@
     <TheHeader/>
 
     <h1>Menu</h1>
+  <div class="green lighten-4">
+    <v-container>
+    <PizzaList/>
+
     <DrinkList/>
 
     <TheFooter/>
@@ -33,6 +34,16 @@ export default {
     
   }
 }
+
+</script> 
+
+<style scoped>
+ 
+    
+    
+  
+</style>
+
 
 
 
