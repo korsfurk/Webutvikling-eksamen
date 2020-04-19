@@ -12,7 +12,7 @@
     <TheHeader class="logo-txt"/>
     <v-spacer></v-spacer>
     <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
-    <v-btn class="mr-3" to="/about">Admin</v-btn>
+    <v-btn class="mr-3" to="/admin">Admin</v-btn>
 </v-app-bar>
 
 <!--Content-->
