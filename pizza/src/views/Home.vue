@@ -23,12 +23,7 @@ export default {
 </script> 
 
 <style scoped>
-  #color{
-    width: 100%;
-    height: 40%;
-    background-color: #B4D7C2;
-  }
-
+ 
 </style>
 
 
