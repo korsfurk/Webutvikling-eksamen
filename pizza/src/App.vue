@@ -1,4 +1,4 @@
-<template class="green lighten-4">
+<template >
   <v-app>
   
   <!--The header + navigation-->
@@ -16,7 +16,7 @@
 </v-app-bar>
 
 <!--Content-->
-<v-container>  
+<v-container class="green lighten-4">  
   <v-content><!--skaper riktig padding mht. navbaren-->
     <router-view/><!--Hvor komponentene (view) vises-->
   </v-content>
