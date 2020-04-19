@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
   
   <!--Header + navigation-->
   <v-app-bar 
@@ -89,6 +89,10 @@ export default {
   position: absolute;
   top: 20%;
   left: 20%;
+}
+
+.app{
+  background-color: black;
 }
 </style>
 
