@@ -1,6 +1,6 @@
 
 <template>
-  <div class="green lighten-4">
+  <div class="green lighten-5">
     <v-container>
     <PizzaList />
     <DrinkList/>

@@ -24,7 +24,7 @@
 
   <!--Footer-->
   <v-footer padless>
-    <v-card flat tile width="100%" class="green lighten-5 text-center">
+    <v-card flat tile width="100%" class="green lighten-4 text-center">
 
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
