@@ -9,10 +9,9 @@
     shrink-on-scroll
     src="https://localhost:5001/images/beef.jpg"
     >
-    <TheHeader class="logo-txt"/>
+    <TheHeader/>
     <v-spacer></v-spacer>
-    <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
-    <v-btn class="mr-3" to="/admin">Admin</v-btn>
+    
 </v-app-bar>
 
 <!--Content-->
@@ -35,6 +34,10 @@
       <v-card-text class="pt-0">
         <TheFooter/>
       </v-card-text>
+
+      <v-spacer></v-spacer>
+      <v-btn class="mr-3" id="cust-btn" to="/">Kunde</v-btn>
+      <v-btn class="mr-3" to="/admin">Admin</v-btn>
 
       <v-divider></v-divider>
 
@@ -77,20 +80,13 @@ export default {
 
 .mr-3{
   position: absolute;
-  bottom: 0px;
+  bottom: 50%;
   right: 0;
 }
 
 #cust-btn{
   position: absolute;
-  bottom: 0;
   right: 100px;
-}
-
-.logo-txt{
-  position: absolute;
-  top: 20%;
-  left: 20%;
 }
 
 </style>

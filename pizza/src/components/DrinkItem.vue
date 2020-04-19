@@ -23,7 +23,7 @@ export default {
         },
         drinkImagesrc: {
             type: String,
-            
+            default: "outofstock.png"
         },
         drinkPrice: {
             type: String 
