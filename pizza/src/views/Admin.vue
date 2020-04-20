@@ -2,19 +2,26 @@
 <div>
   <h3>Add to menu:</h3>
   <AddPizza class="pl-9 ml-9"/>
+  <AddDrink class="pl-9 ml-9"/>
   
   <h3>Edit item from menu</h3>
+
+
   <h3>Delete item from menu </h3>
+
+  
 </div>
 </template>
 
 <script>
 import AddPizza from '@/components/AddPizza'
+import AddDrink from '@/components/AddDrink'
 
 export default {
   name: "Admin",
   components: {
-    AddPizza
+    AddPizza,
+    AddDrink
   }
 }
 </script>
