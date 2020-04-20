@@ -1,10 +1,10 @@
 <template>
     <div>
         <v-row>
-            <v-col>
+            <v-col cols="12" sm="6" lg="4">
                 <h3>Delete Pizza</h3>
                 <v-text-field v-model="deleteId" label="Id"></v-text-field>
-                <input @click="deletePizza" type="button" value="Delete Pizza">
+                <v-btn @click="deletePizza">Delete Pizza</v-btn>
                 <p>{{ deleteStatus }}</p>
             </v-col>
         </v-row>

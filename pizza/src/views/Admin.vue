@@ -10,16 +10,8 @@
 
 
   <h3>Delete item from menu </h3>
-  <DeleteDrink class="pl-9 ml-9"/>
-  <DeletePizza class="pl-9 ml-9"/>
-
-
-
-  <h3>Edit menu</h3>
-
-
-  
-
+    <DeletePizza class="pl-9 ml-9"/>
+    <DeleteDrink class="pl-9 ml-9"/>
 
 </div>
 </template>
