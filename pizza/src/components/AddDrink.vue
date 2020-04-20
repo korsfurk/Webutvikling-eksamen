@@ -26,13 +26,9 @@ export default {
     },
     methods: {
         postDrink(){
-<<<<<<< HEAD
-            console.log(newDrink);
-            console.log(file);
-            /*this.newDrink.drinkImageSrc = this.file.name;
-=======
-            this.newDrink.drinkImagesrc = this.file.name;
->>>>>>> eaeef26fbb30d345e7cca8fad8d588bf9cea8819
+            /*console.log(newDrink);
+            console.log(file);*/
+            this.newDrink.drinkImagerc = this.file.name;
 
             let data = new FormData();
             data.append("file", this.file);
@@ -47,7 +43,7 @@ export default {
                     data: data,
                     config: { headers: { 'Content-Type' : 'multipart/form-data' } }
                 })
-            })*/
+            })
         }
     }
     
