@@ -19,20 +19,20 @@ export default {
     name: "AddDrink",
     data(){
         return{
-            newDrink: { drinkName: "", drinkPrice: "", drinkImageSrc: ""},
+            newDrink: { drinkName: "", drinkPrice: "", drinkImagesrc: ""},
             file: null
         
         }
     },
     methods: {
         postDrink(){
-            this.newDrink.drinkImageSrc = this.file.name;
+            this.newDrink.drinkImagesrc = this.file.name;
 
             let data = new FormData();
             data.append("file", this.file);
 
             axios.post("https://localhost:5001/admin", this.newDrink)
-            .then( result=> {
+            .then( result => {
                 console.log(result.data);
 
                 axios({
