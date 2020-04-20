@@ -53,9 +53,7 @@ export default {
 </script>
 
 <style scoped>
-.v-application .ny-drink{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-right: 25px;
-}
+
+
 </style>
 
