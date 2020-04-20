@@ -21,21 +21,20 @@ namespace EksamenApi.Controllers{
         }
 
          [HttpGet]
-        [Route("[action]")]
-        public async Task<IEnumerable<drink>> GetDrinks(){
+        public async Task<IEnumerable<drink>> Get(){
             List<drink> drinkList = await _context.Drink.ToListAsync();
             return drinkList;
         }
 
         [HttpGet("{id}")]
-        [Route("[action]/{id}")]
-        public async Task<drink> GetDrinkById(int DrinkId){
+        
+        public async Task<drink> GetById(int DrinkId){
             drink chosenDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
             return chosenDrink;
         }
 
         [HttpPost]
-        [Route("[action]")]
+        
         public async Task<drink> Post(drink newDrink){
             _context.Drink.Add(newDrink);
             await _context.SaveChangesAsync();
@@ -43,7 +42,7 @@ namespace EksamenApi.Controllers{
         }
 
           [HttpPut]
-        [Route("[action]")]
+        
         public async Task<drink> Put(drink changeDrink){
             _context.Update(changeDrink);
             await _context.SaveChangesAsync();
@@ -51,14 +50,14 @@ namespace EksamenApi.Controllers{
         }
 
          [HttpDelete("{id}")]
-        [Route("[action]/{id}")]
+        
         public async Task<drink> DeleteDrink(int DrinkId){
             drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
             _context.Drink.Remove(deleteDrink);
             return deleteDrink;
         }
 
-           [HttpPost]
+        /*   [HttpPost]
         [Route("[action]")]
         public void UploadImage(IFormFile file){
             string webRootPath = _hosting.WebRootPath;
@@ -66,7 +65,7 @@ namespace EksamenApi.Controllers{
             using(var fileStream = new FileStream(absolutePath, FileMode.Create)){
                 file.CopyTo(fileStream);
             } 
-        }
+        }*/
     }
 } 
 
