@@ -19,22 +19,26 @@ export default {
     name: "AddDrink",
     data(){
         return{
-            newDrink: { drinkName: "", drinkPrice: "", drinkImageSrc: ""},
+            newDrink: { drinkName: "", drinkPrice: "", drinkImagesrc: ""},
             file: null
         
         }
     },
     methods: {
         postDrink(){
+<<<<<<< HEAD
             console.log(newDrink);
             console.log(file);
             /*this.newDrink.drinkImageSrc = this.file.name;
+=======
+            this.newDrink.drinkImagesrc = this.file.name;
+>>>>>>> eaeef26fbb30d345e7cca8fad8d588bf9cea8819
 
             let data = new FormData();
             data.append("file", this.file);
 
             axios.post("https://localhost:5001/admin", this.newDrink)
-            .then( result=> {
+            .then( result => {
                 console.log(result.data);
 
                 axios({

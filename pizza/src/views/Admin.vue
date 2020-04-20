@@ -9,7 +9,7 @@
 
   <h3>Delete item from menu </h3>
 
-  
+
 </div>
 </template>
 
