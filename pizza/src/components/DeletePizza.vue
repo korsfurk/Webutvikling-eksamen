@@ -1,10 +1,13 @@
 <template>
     <div>
-        <h1>Delete pizza</h1>
-        <v-text-field>Id</v-text-field>
-        <input v-model="deleteId" type="text">
-        <input @click="deletePizza" type="button" value="Delete Pizza">
-        <p>{{ deleteStatus }}</p>
+        <v-row>
+            <v-col>
+                <h3>Delete Pizza</h3>
+                <v-text-field v-model="deleteId" label="Id"></v-text-field>
+                <input @click="deletePizza" type="button" value="Delete Pizza">
+                <p>{{ deleteStatus }}</p>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
