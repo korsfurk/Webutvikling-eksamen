@@ -1,10 +1,15 @@
 <template>
     <div>
-        <h1>Delete drink</h1>
-    <label>Id</label>
-    <input v-model="deleteId" type="text">
-    <input @click="deleteDrink" type="button" value="Delete drink">
-    <p> {{ deleteStatus}} </p>
+        <v-row>
+            <v-col cols="12" sm="6" lg="4">
+                <h3>Delete Drink</h3>
+                <v-text-field v-model="deleteId" label="Id"></v-text-field>
+                <v-btn @click="deleteDrink"> Delete Drink</v-btn>
+                <p> {{ deleteStatus}}</p>
+            </v-col>
+
+
+        </v-row>
     </div>
 </template>
 

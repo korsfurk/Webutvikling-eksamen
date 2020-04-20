@@ -6,7 +6,7 @@
                 <v-text-field v-model="newDrink.drinkName" label="Name"></v-text-field>
                 <v-text-field v-model="newDrink.drinkPrice" label="Price"></v-text-field>
                 <v-file-input v-model="file" show-size label="Image"></v-file-input>
-                <v-btn @click="postDrink">Lagre</v-btn>
+                <v-btn @click="postDrink">Save</v-btn>
             </v-col>
         </v-row>
     </div>
