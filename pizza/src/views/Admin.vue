@@ -7,7 +7,7 @@
     
 </v-app-bar>
   <h3>Add to menu:</h3>
-  <!--<AddPizza class="pl-9 ml-9"/>-->
+  <AddPizza class="pl-9 ml-9"/>
   <AddDrink class="pl-9 ml-9"/>
   
   <h3>Edit item from menu</h3>
@@ -15,7 +15,7 @@
 
   <h3>Delete item from menu </h3>
 
-  
+
 </div>
 </template>
 
