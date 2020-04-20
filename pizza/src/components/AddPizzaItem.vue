@@ -44,23 +44,4 @@ export default {
         }
     }
 }
-
-        /*this.newPizza.pizzaImageSrc = this.file.name;
-
-        let data = new FormData();
-            data.append("file", this.file);
-
-        axios.post("https://localhost:5001/admin/GetFoods", this.newPizza)
-            .then( result => {
-                console.log( result.data );
-
-            axios({
-                method: "POST",
-                url: "https://localhost:5001/mypetsadmin/UploadImage",
-                data: data,
-                config: { headers: { 'Content-Type': 'multipart/form-data' } }       
-            })
-
-        })
-}*/
 </script>
