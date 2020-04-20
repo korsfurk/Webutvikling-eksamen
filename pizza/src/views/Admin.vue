@@ -8,7 +8,7 @@
 
 
   <h3>Delete item from menu </h3>
-    <DeletePizza/>
+    <DeletePizza class="pl-9 ml-9"/>
 
 </div>
 </template>

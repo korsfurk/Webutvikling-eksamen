@@ -1,13 +1,13 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4" class="pl-4">
+            <v-col cols="12" sm="6" lg="4">
                 <h3> New Pizza </h3>
                 <v-text-field v-model="newPizza.pizzaName" label="Name"></v-text-field>
                 <v-text-field v-model="newPizza.pizzaPrice" label="Price"></v-text-field>
                 <v-text-field v-model="newPizza.pizzaDescription" label="Description"></v-text-field>
                 <v-file-input v-model="file" show-size label="Image"></v-file-input>
-                <v-btn @click="postPizza">Lagre</v-btn>
+                <v-btn @click="postPizza">Save</v-btn>
             </v-col>
         </v-row>
     </div>
