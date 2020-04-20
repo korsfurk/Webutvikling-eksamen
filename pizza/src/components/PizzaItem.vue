@@ -37,7 +37,8 @@ export default {
             type: String
         },
         pizzaImageSrc: {
-            type: String
+            type: String,
+            default: "beef.jpg"
         },
         pizzaPrice: {
             type: String
