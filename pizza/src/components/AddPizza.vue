@@ -1,7 +1,8 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4" class="mx-auto">
+            <v-col cols="12" sm="6" lg="4" class="pl-4">
+                <h3> New Pizza </h3>
                 <v-text-field v-model="newPizza.pizzaName" label="Name"></v-text-field>
                 <v-text-field v-model="newPizza.pizzaPrice" label="Price"></v-text-field>
                 <v-text-field v-model="newPizza.pizzaDescription" label="Description"></v-text-field>
@@ -16,7 +17,7 @@
 import axios from 'axios'
 
 export default {
-    name: "AddPizzaItem",
+    name: "AddPizza",
     data(){
         return {
             newPizza: { pizzaName: "", pizzaPrice: "", pizzaDescription: "", pizzaImageSrc: "" },
@@ -30,7 +31,7 @@ export default {
             let data = new FormData();
             data.append("file", this.file);
 
-            axios.post( "https://localhost:5001/customer", this.newPizza )
+            axios.post( "https://localhost:5001/admin", this.newPizza )
                 .then( result => {
                     console.log(result.data);
 

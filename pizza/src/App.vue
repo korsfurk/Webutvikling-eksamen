@@ -1,7 +1,7 @@
 <template>
   <v-app class="black">
   
-  <!--Header + navigation-->
+  <!--Header-->
   <v-app-bar 
     class="nav-bar"
     app 
@@ -10,8 +10,7 @@
     src="https://localhost:5001/images/beef.jpg"
     >
     <TheHeader/>
-    <v-spacer></v-spacer>
-    <v-btn class="" to="/">Home</v-btn>
+    
 </v-app-bar>
 
 <!--Content-->
@@ -21,7 +20,7 @@
   </v-content>
 
 
-  <!--Footer-->
+  <!--Footer + navigation to admin-->
   <v-footer padless>
     <v-card flat tile width="100%" class="green lighten-4 text-center">
 
@@ -80,13 +79,13 @@ export default {
 
 .mr-3{
   position: absolute;
-  bottom: 50%;
-  right: 0;
+  bottom: 40%;
+  right: 10%;
 }
 
 #cust-btn{
   position: absolute;
-  right: 100px;
+  bottom: 20%;
 }
 
 </style>

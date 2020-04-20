@@ -26,7 +26,7 @@ export default {
         }
     },
     created(){
-        axios.get("https://localhost:5001/customer")
+        axios.get("https://localhost:5001/admin/GetFoods")
             .then( result => {
                 this.pizzas = result.data;
             } )
