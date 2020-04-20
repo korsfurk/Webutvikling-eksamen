@@ -39,7 +39,7 @@ export default {
                     method: "POST",
                     url: "https://localhost:5001/admin/UploadImage",
                     data: data,
-                    config: { headers: { 'Content-type' : 'multipart/form-data' } }
+                    config: { headers: { 'Content-Type' : 'multipart/form-data' } }
                 })
             })
         }

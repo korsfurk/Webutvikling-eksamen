@@ -1,7 +1,13 @@
 <template>
 <div>
+  <v-app-bar 
+    class="nav-bar"
+    app 
+    >
+    
+</v-app-bar>
   <h3>Add to menu:</h3>
-  <AddPizza class="pl-9 ml-9"/>
+  <!--<AddPizza class="pl-9 ml-9"/>-->
   <AddDrink class="pl-9 ml-9"/>
   
   <h3>Edit item from menu</h3>
