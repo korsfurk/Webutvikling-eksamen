@@ -34,6 +34,7 @@ export default {
             data.append("file", this.file);
 
             axios.postDrink("https://localhost:5001/admin", this.newDrink)
+            axios.post("https://localhost:5001/admin", this.newDrink)
             .then( result => {
                 console.log(result.data);
 
