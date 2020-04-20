@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4" class="pl-4">
+            <v-col cols="12" sm="6" lg="4" class="ny-drink">
                 <h3> New Drink </h3>
                 <v-text-field v-model="newDrink.drinkName" label="Name"></v-text-field>
                 <v-text-field v-model="newDrink.drinkPrice" label="Price"></v-text-field>
@@ -26,9 +26,7 @@ export default {
     },
     methods: {
         postDrink(){
-            /*console.log(newDrink);
-            console.log(file);*/
-            this.newDrink.drinkImagerc = this.file.name;
+            this.newDrink.drinkImagesrc = this.file.name;
 
             let data = new FormData();
             data.append("file", this.file);
@@ -51,5 +49,9 @@ export default {
 </script>
 
 <style scoped>
-
+.v-application .ny-drink{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-right: 25px;
+}
 </style>
+
