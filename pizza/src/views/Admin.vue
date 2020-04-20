@@ -4,13 +4,21 @@
   <AddPizza class="pl-9 ml-9"/>
   <AddDrink class="pl-9 ml-9"/>
   
+
   <h3>Edit item from menu</h3>
   
 
 
   <h3>Delete item from menu </h3>
   <DeleteDrink class="pl-9 ml-9"/>
+  <DeletePizza class="pl-9 ml-9"/>
 
+
+
+  <h3>Edit menu</h3>
+
+
+  
 
 
 </div>
@@ -19,14 +27,21 @@
 <script>
 import AddPizza from '@/components/AddPizza'
 import AddDrink from '@/components/AddDrink'
+
 import DeleteDrink from '@/components/DeleteDrink'
+
+import DeletePizza from '@/components/DeletePizza'
+
 
 export default {
   name: "Admin",
   components: {
     AddPizza,
     AddDrink,
-    DeleteDrink
+    DeleteDrink,
+
+    DeletePizza
+
   }
 }
 </script>
