@@ -13,7 +13,7 @@
 </template>
 
 <script>
-//import axios from 'axios'
+import axios from 'axios'
 
 export default {
     name: "AddDrink",
@@ -26,14 +26,14 @@ export default {
     },
     methods: {
         postDrink(){
-            console.log(newDrink);
-            console.log(file);
-            /*this.newDrink.drinkImagesrc = this.file.name;
+            /*console.log(this.newDrink);
+            console.log(this.file);*/
+            this.newDrink.drinkImagesrc = this.file.name;
 
             let data = new FormData();
             data.append("file", this.file);
 
-            axios.post("https://localhost:5001/admin", this.newDrink)
+            axios.postDrink("https://localhost:5001/admin", this.newDrink)
             .then( result => {
                 console.log(result.data);
 
@@ -43,7 +43,7 @@ export default {
                     data: data,
                     config: { headers: { 'Content-Type' : 'multipart/form-data' } }
                 })
-            })*/
+            })
         }
     }
     

@@ -69,7 +69,7 @@ namespace EksamenApi.Controllers{
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<drink> Post(drink newDrink){
+        public async Task<drink> PostDrink(drink newDrink){
             _context.Drink.Add(newDrink);
             await _context.SaveChangesAsync();
             return newDrink;
