@@ -30,7 +30,7 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="pt-0 mx-auto">
+      <v-card-text class="pt-0">
         <TheFooter/>
       </v-card-text>
 
@@ -72,17 +72,6 @@ export default {
 
 <style scoped>
 
-
-.mr-3{
-  position: absolute;
-  bottom: 40%;
-  right: 10%;
-}
-
-#cust-btn{
-  position: absolute;
-  bottom: 20%;
-}
 
 </style>
 
