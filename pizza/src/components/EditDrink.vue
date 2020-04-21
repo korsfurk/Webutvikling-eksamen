@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1> Edit drink</h1>
+        <h1 class="font-weight-light"> Edit drink</h1>
         <label>Id</label>
         <v-text-field v-model="editId" label="Id">></v-text-field>
         <v-btn @click="getDrink">Get drink</v-btn>

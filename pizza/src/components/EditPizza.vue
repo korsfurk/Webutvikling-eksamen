@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1> Edit pizza</h1>
+        <h1 class="font-weight-light"> Edit pizza</h1>
         <label>Id</label>
         <v-text-field v-model="editId" label="Id">></v-text-field>
         <v-btn @click="getPizza">Get pizza</v-btn>
@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         getDrink(){
-            let webAPIUrl = `https://localhost:8080/admin/${this.edited}`;
+            let webAPIUrl = `https://localhost:8080/admin/${this.editId}`;
             axios.get(webAPIUrl )
             .then( result => {
                 this.editPizza = result.data;

@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col cols="12" sm="6" lg="4" class="pl-4">
-                <h3> New Drink </h3>
+                <h3 class="font-weight-light"> New Drink </h3>
                 <v-text-field v-model="newDrink.drinkName" label="Name"></v-text-field>
                 <v-text-field v-model="newDrink.drinkPrice" label="Price"></v-text-field>
                 <v-file-input v-model="file" show-size label="Image"></v-file-input>
