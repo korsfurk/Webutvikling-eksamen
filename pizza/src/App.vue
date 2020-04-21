@@ -30,13 +30,9 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="pt-0">
+      <v-card-text class="pt-0 mx-auto">
         <TheFooter/>
       </v-card-text>
-
-      <v-spacer></v-spacer>
-      <v-btn class="mr-3" id="cust-btn" to="/">Customer</v-btn>
-      <v-btn class="mr-3" to="/admin">Admin</v-btn>
 
       <v-divider></v-divider>
 
