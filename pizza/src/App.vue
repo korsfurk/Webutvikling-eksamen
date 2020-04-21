@@ -73,16 +73,5 @@ export default {
 <style scoped>
 
 
-.mr-3{
-  position: absolute;
-  bottom: 40%;
-  right: 10%;
-}
-
-#cust-btn{
-  position: absolute;
-  bottom: 20%;
-}
-
 </style>
 
