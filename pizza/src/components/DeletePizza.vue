@@ -38,3 +38,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
