@@ -1,4 +1,5 @@
 <template>
+<!--Content-->
     <div>
         <h1 class="font-weight-light"> Edit pizza</h1>
         <label>Id</label>
@@ -15,6 +16,7 @@
     </div>
 </template>
 
+<!--Content-->
 <script>
 import axios from 'axios'
 export default {
@@ -26,6 +28,7 @@ export default {
             
         }
     },
+    
     methods: {
         getPizza(){
             let webAPIUrl = `https://localhost:8080/admin/${this.editId}`;
