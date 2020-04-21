@@ -3,7 +3,7 @@
         <v-row>
             <v-col cols="12" sm="6" lg="4">
                 <h3>Delete Drink</h3>
-                <v-text-field v-model="deleteId" label="Id"></v-text-field>
+                <v-text-field v-model="drinkId" label="Id"></v-text-field>
                 <v-btn @click="deleteDrink"> Delete Drink</v-btn>
                 <p> {{ deleteStatus}}</p>
             </v-col>
@@ -19,14 +19,14 @@ export default {
     name: "DeleteDrink",
     data(){
         return {
-            deleteId: null,
-            deleteStatus: "Your item is deleted."
+            drinkId: null,
+            deleteStatus: "Nothing is deleted yet."
         
         }
     },
     methods: {
         deleteDrink(){
-            let webAPIUrl = `https://localhost:8080/admin/${this.deleteId}`;
+            let webAPIUrl = `https://localhost:8080/drink/${this.drinkId}`;
 
             axios.delete( webAPIUrl)
             .then(
