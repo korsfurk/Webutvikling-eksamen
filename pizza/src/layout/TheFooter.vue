@@ -2,6 +2,7 @@
     <footer>
         <v-row>
             <v-col cols="12" sm="6" lg="4">
+                <section>
                 <h3>Privacy Policy</h3>
                 <ul>
                     <li 
@@ -10,14 +11,17 @@
                         {{value}}
                     </li>
                 </ul>
+                
                 <h3>Sponsors</h3>
                 <ul>
                     <li v-for="sponsor in sponsors" :key="sponsor.id">
                         {{ sponsor.name }}
                     </li>
                 </ul>
+                </section>
             </v-col>
             <v-col cols="12" sm="6" lg="4">
+                <section>
                 <h3>Contact Info</h3>
                 <ul>
                     <li 
@@ -26,10 +30,13 @@
                         {{value}}
                     </li>
                 </ul>
+                </section>
             </v-col>
             <v-col cols="12" sm="6" lg="4">
-                <v-btn class="mr-3" id="cust-btn" to="/">Customer</v-btn>
+                <section>
+                <v-btn class="mr-3" id="home-btn" to="/">Home</v-btn>
                 <v-btn class="mr-3" to="/admin">Admin</v-btn>
+                </section>
             </v-col>
         </v-row>
     </footer>
@@ -63,5 +70,4 @@ export default {
 li{
     list-style-type: none;
 }
-
 </style> 

@@ -30,7 +30,7 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="pt-0 mx-auto">
+      <v-card-text class="pt-0">
         <TheFooter/>
       </v-card-text>
 
