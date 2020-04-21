@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         getDrink(){
-            let webAPIUrl = `https://localhost:8080/drink/${this.edited}`;
+            let webAPIUrl = `https://localhost:8080/drink/${this.editId}`;
             axios.get(webAPIUrl )
             .then( result => {
                 this.editDrink = result.data;

@@ -27,14 +27,14 @@ export default {
         }
     },
     methods: {
-        getDrink(){
+        getPizza(){
             let webAPIUrl = `https://localhost:8080/admin/${this.editId}`;
             axios.get(webAPIUrl )
             .then( result => {
                 this.editPizza = result.data;
             })
         },
-        putDrink(){
+        putPizza(){
             let webAPIUrl = "https://localhost:8080/admin";
             axios.put(webAPIUrl, this.editPizza)
         }
