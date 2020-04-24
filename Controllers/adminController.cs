@@ -65,9 +65,10 @@ namespace EksamenApi.Controllers{
 
 
         [HttpDelete("{id}")]
-        public async Task<food> DeleteFood(int FoodId){
-            food deleteFood = await _context.Food.FirstOrDefaultAsync(food => food.FoodId == FoodId);
+        public async Task<food> DeleteFood(int id){
+            food deleteFood = await _context.Food.FirstOrDefaultAsync(food => food.FoodId == id);
             _context.Food.Remove(deleteFood);
+            await _context.SaveChangesAsync();
             return deleteFood;
         }
 
