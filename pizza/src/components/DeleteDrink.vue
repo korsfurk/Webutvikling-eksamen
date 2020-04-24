@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         deleteDrink(){
-            let webAPIUrl = `https://localhost:8080/drink/${this.drinkId}`;
+            let webAPIUrl = `https://localhost:5001/drink/${this.drinkId}`;
 
             axios.delete( webAPIUrl)
             .then(

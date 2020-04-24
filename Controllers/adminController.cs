@@ -21,24 +21,18 @@ namespace EksamenApi.Controllers{
         }
 
         [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<admin>> GetAdmins(){
             List<admin> adminList = await _context.Admin.ToListAsync();
             return adminList;
         }
 
         [HttpGet]
-        [Route("[action]")]
         public async Task<IEnumerable<food>> GetFoods(){
             List<food> foodList = await _context.Food.ToListAsync();
             return foodList;
         }
 
-        [HttpGet]
-        [Route("[action]")]
-        public async Task<IEnumerable<drink>> GetDrinks(){
-            List<drink> drinkList = await _context.Drink.ToListAsync();
-            return drinkList;
-        }
 
         [HttpGet]
         [Route("[action]")]
@@ -53,12 +47,6 @@ namespace EksamenApi.Controllers{
             return chosenFood;
         }
 
-        [HttpGet("{id}")]
-        [Route("[action]/{id}")]
-        public async Task<drink> GetDrinkById(int DrinkId){
-            drink chosenDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
-            return chosenDrink;
-        }
 
         [HttpPost]
         public async Task<food> Post(food newFood){
@@ -67,13 +55,6 @@ namespace EksamenApi.Controllers{
             return newFood;
         }
 
-        [HttpPost]
-        [Route("[action]")]
-        public async Task<drink> PostDrink(drink newDrink){
-            _context.Drink.Add(newDrink);
-            await _context.SaveChangesAsync();
-            return newDrink;
-        }
 
         [HttpPut]
         public async Task<food> Put(food changeFood){
@@ -82,13 +63,6 @@ namespace EksamenApi.Controllers{
             return changeFood;
         }
 
-        [HttpPut]
-        [Route("[action]")]
-        public async Task<drink> Put(drink changeDrink){
-            _context.Update(changeDrink);
-            await _context.SaveChangesAsync();
-            return changeDrink;
-        }
 
         [HttpDelete("{id}")]
         public async Task<food> DeleteFood(int FoodId){
@@ -96,15 +70,6 @@ namespace EksamenApi.Controllers{
             _context.Food.Remove(deleteFood);
             return deleteFood;
         }
-
-        [HttpDelete("{id}")]
-        [Route("[action]/{id}")]
-        public async Task<drink> DeleteDrink(int DrinkId){
-            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
-            _context.Drink.Remove(deleteDrink);
-            return deleteDrink;
-        }
-
 
 
         [HttpPost]

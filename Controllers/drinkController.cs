@@ -49,11 +49,11 @@ namespace EksamenApi.Controllers{
             return changeDrink;
         }
 
-         [HttpDelete("{id}")]
-        
-        public async Task<drink> DeleteDrink(int DrinkId){
-            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
+        [HttpDelete("{id}")]
+        public async Task<drink> Delete(int id){
+            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == id);
             _context.Drink.Remove(deleteDrink);
+            await _context.SaveChangesAsync();
             return deleteDrink;
         }
 

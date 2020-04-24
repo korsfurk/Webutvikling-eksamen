@@ -26,7 +26,7 @@ export default {
     methods: {
         deletePizza(){
             
-            let webApiUrl = `https://localhost:5001/admin/DeleteFood${this.foodId}`;
+            let webApiUrl = `https://localhost:5001/admin/DeleteFood/${this.foodId}`;
             
             axios.delete( webApiUrl )
                 .then(
