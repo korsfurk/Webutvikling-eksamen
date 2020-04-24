@@ -1,4 +1,5 @@
 <template>
+<!--Overskrifter på siden -->
 <div>
   <h3 class="font-weight-light">ADD TO MENU</h3>
   <AddPizza class="pl-9 ml-9"/>
@@ -18,6 +19,7 @@
 </div>
 </template>
 
+<!-- Disse komponentene blir det hentet data ifra-->
 <script>
 import AddPizza from '@/components/AddPizza'
 import AddDrink from '@/components/AddDrink'

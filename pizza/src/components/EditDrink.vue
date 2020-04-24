@@ -1,4 +1,5 @@
 <template>
+<!--Content-->
     <div>
         <h1 class="font-weight-light"> Edit drink</h1>
         <label>Id</label>
