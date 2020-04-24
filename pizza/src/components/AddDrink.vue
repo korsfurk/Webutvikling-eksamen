@@ -27,8 +27,6 @@ export default {
     },
     methods: {
         postDrink(){
-            /*console.log(this.newDrink);
-            console.log(this.file);*/
             this.newDrink.drinkImagesrc = this.file.name;
 
             let data = new FormData();
