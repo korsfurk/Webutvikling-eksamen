@@ -57,15 +57,6 @@ namespace EksamenApi.Controllers{
             return deleteDrink;
         }
 
-        /*   [HttpPost]
-        [Route("[action]")]
-        public void UploadImage(IFormFile file){
-            string webRootPath = _hosting.WebRootPath;
-            string absolutePath = Path.Combine($"{webRootPath}/images/{file.FileName}");
-            using(var fileStream = new FileStream(absolutePath, FileMode.Create)){
-                file.CopyTo(fileStream);
-            } 
-        }*/
     }
 } 
 

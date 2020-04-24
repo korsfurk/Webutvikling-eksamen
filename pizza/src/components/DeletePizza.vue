@@ -4,7 +4,7 @@
             <v-col cols="12" sm="6" lg="4">
                 <h3>Delete Pizza</h3>
                 <v-text-field v-model="foodId" label="Id"></v-text-field>
-                <v-btn @click="deletePizza">Delete Pizza</v-btn>
+                <v-btn @click="deleteFood">Delete Pizza</v-btn>
                 <p>{{ deleteStatus }}</p>
             </v-col>
         </v-row>
@@ -19,12 +19,12 @@ export default {
     data() {
         return {
             foodId: null,
-            deleteStatus: "Deleted"
+            deleteStatus: "Nothing is deleted yet."
         }
     },
     
     methods: {
-        deletePizza(){
+        deleteFood(){
             
             let webApiUrl = `https://localhost:5001/admin/${this.foodId}`;
             
