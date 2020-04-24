@@ -42,7 +42,6 @@
 
     </v-card>
   </v-footer>
- 
 
   </v-app>
 </template>

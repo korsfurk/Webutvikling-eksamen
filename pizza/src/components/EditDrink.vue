@@ -1,17 +1,22 @@
 <template>
 <!--Content-->
     <div>
+        <v-col cols="12" sm="6" lg="4">
         <h1 class="font-weight-light"> Edit drink</h1>
         <label>Id</label>
-        <v-text-field v-model="editId" label="Id">></v-text-field>
-        <v-btn @click="getDrink">Get drink</v-btn>
-       
+        <input v-model="editId " type="text">
+        <input @click="getDrink" type="button" value=" Get drink">
+        
         <hr>
         <label> Drink </label>
-        <v-text-field v-model="editId" label="Id">></v-text-field>
-        <v-btn @click="getDrink">Save drink</v-btn>
+        <input v-model="editDrink.drink" type="text">
+        <label> New drink </label>
+        <input v-model="editDrink.newDrink" type="text">
+        <input @click="putDrink" type="button" value="Save drink">
+
+     
         
-       
+       </v-col>
 
     </div>
 </template>
