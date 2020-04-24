@@ -3,7 +3,8 @@
 <div>
   <h3 class="font-weight-light">ADD TO MENU</h3>
   <AddPizza class="pl-9 ml-9"/>
-  <AddDrink class="pl-9 ml-9"/>
+  <AddDrink class="pr-9 mr-9"/>
+  
   
 
   <h3 class="font-weight-light">EDIT ITEM FROM MENU</h3>
