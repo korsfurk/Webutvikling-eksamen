@@ -41,8 +41,7 @@ namespace EksamenApi.Controllers{
             return newDrink;
         }
 
-          [HttpPut]
-        
+        [HttpPut]
         public async Task<drink> Put(drink changeDrink){
             _context.Update(changeDrink);
             await _context.SaveChangesAsync();

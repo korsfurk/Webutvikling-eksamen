@@ -21,7 +21,6 @@ export default {
         return {
             drinkId: null,
             deleteStatus: "Nothing is deleted yet."
-        
         }
     },
     methods: {
