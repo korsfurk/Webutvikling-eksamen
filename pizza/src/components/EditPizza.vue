@@ -1,6 +1,7 @@
 <template>
 <!--Content-->
     <div>
+        <v-col cols="12" sm="6" lg="4">
         <h1 class="font-weight-light"> Edit pizza</h1>
         <label>Id</label>
         <v-text-field v-model="editId" label="Id">></v-text-field>
@@ -11,6 +12,7 @@
         <v-text-field v-model="editId" label="Id">></v-text-field>
         <v-btn @click="getPizza">Save pizza</v-btn>
         
+        </v-col>
        
 
     </div>
