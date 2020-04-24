@@ -61,7 +61,7 @@ export default {
     },
     data: () => ({
         show: false,
-        rating: ""
+        rating: 4
     })
     
 }

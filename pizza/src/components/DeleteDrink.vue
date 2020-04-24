@@ -21,12 +21,11 @@ export default {
         return {
             drinkId: null,
             deleteStatus: "Nothing is deleted yet."
-        
         }
     },
     methods: {
         deleteDrink(){
-            let webAPIUrl = `https://localhost:8080/drink/${this.drinkId}`;
+            let webAPIUrl = `https://localhost:5001/drink/${this.drinkId}`;
 
             axios.delete( webAPIUrl)
             .then(

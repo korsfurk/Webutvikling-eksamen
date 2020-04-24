@@ -41,31 +41,21 @@ namespace EksamenApi.Controllers{
             return newDrink;
         }
 
-          [HttpPut]
-        
+        [HttpPut]
         public async Task<drink> Put(drink changeDrink){
             _context.Update(changeDrink);
             await _context.SaveChangesAsync();
             return changeDrink;
         }
 
-         [HttpDelete("{id}")]
-        
-        public async Task<drink> DeleteDrink(int DrinkId){
-            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == DrinkId);
+        [HttpDelete("{id}")]
+        public async Task<drink> Delete(int id){
+            drink deleteDrink = await _context.Drink.FirstOrDefaultAsync(drink => drink.DrinkId == id);
             _context.Drink.Remove(deleteDrink);
+            await _context.SaveChangesAsync();
             return deleteDrink;
         }
 
-        /*   [HttpPost]
-        [Route("[action]")]
-        public void UploadImage(IFormFile file){
-            string webRootPath = _hosting.WebRootPath;
-            string absolutePath = Path.Combine($"{webRootPath}/images/{file.FileName}");
-            using(var fileStream = new FileStream(absolutePath, FileMode.Create)){
-                file.CopyTo(fileStream);
-            } 
-        }*/
     }
 } 
 
