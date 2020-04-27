@@ -6,10 +6,10 @@
                 <h3 class="font-weight-light"> Edit pizza</h3>
                 <v-text-field v-model="editId" label="Id for pizza you want to edit"></v-text-field>
                 <v-btn @click="getPizza">Get pizza</v-btn>
-                <v-divider></v-divider>
+                
+                <v-divider inset vertical></v-divider>
 
-                <label> Pizza </label>
-                <v-text-field v-model="editPizza" label="Id">></v-text-field>
+                <v-text-field v-model="editPizza" label="Pizza">></v-text-field>
                 <v-btn @click="putPizza">Save pizza</v-btn>
                 
             </v-col>
