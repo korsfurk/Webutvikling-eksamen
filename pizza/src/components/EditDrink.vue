@@ -3,19 +3,20 @@
     <div>
         <v-row>
             <v-col cols="12" sm="6" lg="4">
-                <h1 class="font-weight-light"> Edit drink</h1>
-                <label>Id</label>
-                <input v-model="editId " type="text">
-                <input @click="getDrink" type="button" value=" Get drink">
+                <h3 class="font-weight-light"> Edit drink</h3>
+                <v-text-field v-model="editId" label="Id for drink you want to edit"></v-text-field>
+                <v-btn @click="getDrink">Get drink</v-btn>
                 
-                <hr>
-                <label> Drink </label>
-                <input v-model="editDrink.drink" type="text">
-                <label> New drink </label>
-                <input v-model="editDrink.newDrink" type="text">
-                <input @click="putDrink" type="button" value="Save drink">
+                <v-divider inset></v-divider>
+
+                <v-text-field v-model="editDrink.drinkName" label="Edit drink name"></v-text-field>
+                <v-text-field v-model="editDrink.drinkPrice" label="Edit price"></v-text-field>
+                <!--<v-file-input v-model="file" label></v-file-input>-->
+                <v-btn @click="putDrink">Save pizza</v-btn>
+                
             </v-col>
        </v-row>
+
     </div>
 </template>
 

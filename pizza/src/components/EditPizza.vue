@@ -39,7 +39,7 @@ export default {
             axios.get(webAPIUrl )
             .then( result => {
                 this.editPizza = result.data;
-                //console.log(this.editPizza.pizzaName);
+                
             })
         },
         putPizza(){
