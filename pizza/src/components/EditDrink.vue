@@ -2,12 +2,11 @@
 <!--Content-->
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4">
+            <v-col >
                 <h3 class="font-weight-light"> Edit drink</h3>
                 <v-text-field v-model="editId" label="Id for drink you want to edit"></v-text-field>
                 <v-btn @click="getDrink">Get drink</v-btn>
                 
-                <v-divider inset></v-divider>
 
                 <v-text-field v-model="editDrink.drinkName" label="Edit drink name"></v-text-field>
                 <v-text-field v-model="editDrink.drinkPrice" label="Edit price"></v-text-field>
@@ -37,6 +36,7 @@ export default {
             axios.get(webAPIUrl )
             .then( result => {
                 this.editDrink = result.data;
+                console.log(this.editDrink);
             })
         },
         putDrink(){

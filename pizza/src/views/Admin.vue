@@ -2,19 +2,50 @@
 <!--Overskrifter på siden -->
 <div>
   <h3 class="font-weight-light">ADD TO MENU</h3>
-  
-    <AddPizza class="pl-9 ml-9"/>
-    <v-divider vertical ></v-divider>
-    <AddDrink class="pl-9 ml-9"/>
+  <v-container class="green lighten-5">
+    <v-row>
+      
+      <v-col cols="12" sm="6" >
+        <AddPizza/>
+      </v-col>
+      
+      <v-col cols="12" sm="6">
+        <AddDrink />
+      </v-col>
+
+    </v-row>
+  </v-container>
    
   <h3 class="font-weight-light">EDIT ITEM FROM MENU</h3>
-    <EditDrink class="pl-9 ml-9"/>
-    <EditPizza class="pl-9 ml-9"/>
+    <v-container class="green lighten-5">
+    <v-row>
+      
+      <v-col cols="12" sm="6" >
+        <EditPizza/>
+      </v-col>
+      
+      <v-col cols="12" sm="6">
+        <EditDrink />
+      </v-col>
 
-
+    </v-row>
+  </v-container>
+    
   <h3 class="font-weight-light">DELETE ITEM FROM MENU </h3>
-    <DeletePizza class="pl-9 ml-9"/>
-    <DeleteDrink class="pl-9 ml-9"/>
+    <v-container class="green lighten-5">
+    <v-row>
+      
+      <v-col cols="12" sm="6" >
+        <DeletePizza/>
+      </v-col>
+      
+      <v-col cols="12" sm="6">
+        <DeleteDrink />
+      </v-col>
+
+    </v-row>
+  </v-container>
+
 
 
 </div>
@@ -49,6 +80,24 @@ h3{
   text-align: center;
   padding-top: 30px;
 }
+
+/*.add{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.addPizza{
+  position: absolute;
+  left: 10%;
+  width: 100%;
+}
+
+.addDrink{
+  position: absolute;
+  left: 50%;
+  width: 100%;
+}*/
 </style>
 
 

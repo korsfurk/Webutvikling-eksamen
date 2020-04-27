@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-row>
-            <v-col cols="12" sm="6" lg="4">
-                <h3>Delete Drink</h3>
+            <v-col >
+                <h3 class="font-weight-light">Delete Drink</h3>
                 <v-text-field v-model="drinkId" label="Id"></v-text-field>
                 <v-btn @click="deleteDrink"> Delete Drink</v-btn>
                 <p> {{ deleteStatus}}</p>
