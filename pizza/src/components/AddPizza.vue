@@ -31,7 +31,7 @@ export default {
             let data = new FormData();
             data.append("file", this.file);
 
-            axios.post( "https://localhost:5001/admin", this.newPizza )
+            axios.post( "https://localhost:5001/food", this.newPizza )
                 .then( result => {
                     console.log(result.data);
 

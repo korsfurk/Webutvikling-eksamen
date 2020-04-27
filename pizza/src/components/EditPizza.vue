@@ -7,9 +7,12 @@
                 <v-text-field v-model="editId" label="Id for pizza you want to edit"></v-text-field>
                 <v-btn @click="getPizza">Get pizza</v-btn>
                 
-                <v-divider inset vertical></v-divider>
+                <v-divider inset></v-divider>
 
-                <v-text-field v-model="editPizza" label="Pizza">></v-text-field>
+                <v-text-field v-model="editPizza.pizzaName" label="Edit pizza name"></v-text-field>
+                <v-text-field v-model="editPizza.pizzaPrice" label="Edit price"></v-text-field>
+                <v-text-field v-model="editPizza.pizzaDescription" label="Edit description"></v-text-field>
+                <!--<v-file-input v-model="file" label></v-file-input>-->
                 <v-btn @click="putPizza">Save pizza</v-btn>
                 
             </v-col>
@@ -18,7 +21,6 @@
     </div>
 </template>
 
-<!--Content-->
 <script>
 import axios from 'axios'
 export default {
@@ -26,7 +28,7 @@ export default {
     data(){
         return{
             editId: "",
-            editPizza: {},
+            editPizza: {}
             
         }
     },
@@ -37,6 +39,7 @@ export default {
             axios.get(webAPIUrl )
             .then( result => {
                 this.editPizza = result.data;
+                //console.log(this.editPizza.pizzaName);
             })
         },
         putPizza(){

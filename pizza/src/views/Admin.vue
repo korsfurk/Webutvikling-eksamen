@@ -2,15 +2,10 @@
 <!--Overskrifter på siden -->
 <div>
   <h3 class="font-weight-light">ADD TO MENU</h3>
-  <v-row>
-    <v-col cols="12" sm="6" lg="4">
+  
       <AddPizza class="pl-9 ml-9"/>
       <AddDrink class="pl-9 ml-9"/>
-    </v-col>
-  </v-row>
-  
-  
-  
+   
 
   <h3 class="font-weight-light">EDIT ITEM FROM MENU</h3>
   <EditDrink class="pl-9 ml-9"/>
