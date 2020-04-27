@@ -8,9 +8,16 @@
         <v-card-title>{{ drinkName }}</v-card-title>
         <v-card-subtitle>{{ drinkPrice }} kr</v-card-subtitle>
 
-        <v-card-actions>
-            <v-btn text>Order</v-btn>
-        </v-card-actions>
+        <!--<v-card-actions>
+             <v-rating 
+                v-model="rating"
+                background-color="grey lighten-1"
+                color="yellow accent-4"
+                hover
+                size="24"
+            >
+            </v-rating>
+        </v-card-actions>-->
     </v-card>
 </template>
 
