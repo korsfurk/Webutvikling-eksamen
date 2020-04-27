@@ -1,10 +1,9 @@
 <template>
 <!--Overskrifter på siden -->
 <div>
-  <h3 class="font-weight-light">ADD TO MENU</h3>
+  <h3 class="font-weight-light green lighten-4">ADD TO MENU</h3>
   <v-container class="green lighten-5">
     <v-row>
-      
       <v-col cols="12" sm="6" >
         <AddPizza/>
       </v-col>
@@ -16,7 +15,7 @@
     </v-row>
   </v-container>
    
-  <h3 class="font-weight-light">EDIT ITEM FROM MENU</h3>
+  <h3 class="font-weight-light green lighten-4">EDIT ITEM FROM MENU</h3>
     <v-container class="green lighten-5">
     <v-row>
       
@@ -31,7 +30,7 @@
     </v-row>
   </v-container>
     
-  <h3 class="font-weight-light">DELETE ITEM FROM MENU </h3>
+  <h3 class="font-weight-light green lighten-4">DELETE ITEM FROM MENU </h3>
     <v-container class="green lighten-5">
     <v-row>
       

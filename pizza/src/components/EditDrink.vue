@@ -11,7 +11,7 @@
                 <v-text-field v-model="editDrink.drinkName" label="Edit drink name"></v-text-field>
                 <v-text-field v-model="editDrink.drinkPrice" label="Edit price"></v-text-field>
                 <!--<v-file-input v-model="file" label></v-file-input>-->
-                <v-btn @click="putDrink">Save pizza</v-btn>
+                <v-btn @click="putDrink">Save drink</v-btn>
                 
             </v-col>
        </v-row>
@@ -36,7 +36,7 @@ export default {
             axios.get(webAPIUrl )
             .then( result => {
                 this.editDrink = result.data;
-                console.log(this.editDrink);
+                console.log(result.data);
             })
         },
         putDrink(){
